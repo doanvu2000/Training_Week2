@@ -1,0 +1,2 @@
+rootProject.name = "Paypal demo"
+include ':app'
