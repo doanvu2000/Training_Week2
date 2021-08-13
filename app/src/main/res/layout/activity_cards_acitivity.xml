@@ -71,47 +71,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_arrow_back_24"
-        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2pt"
         android:fontFamily="@font/montserrat_semibold"
         android:gravity="center|left"
         android:text="Cuentas bancarias y tarjetas"
         android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@id/tvDetail"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/tvDetail"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
-        app:layout_constraintTop_toTopOf="@id/btnBack" />
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
 
     <TextView
         android:id="@+id/tvDetail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2pt"
         android:fontFamily="@font/montserrat_regular"
         android:gravity="center|left"
         android:text="Mantenemos tus datos financieros protegidos para que nadie vea la información confidencial."
         android:textColor="#ffffff"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintBottom_toTopOf="@id/line1"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
-        app:layout_constraintTop_toTopOf="@id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:background="@drawable/ic_cardbank"
+        android:maxWidth="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_cardbank"
         app:layout_constraintBottom_toBottomOf="@id/line3"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
@@ -140,186 +140,207 @@
         app:layout_constraintRight_toRightOf="@id/line7"
         app:layout_constraintTop_toTopOf="@id/line4">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/mastercard_2" />
+            app:cardPreventCornerOverlap="true">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:background="@color/white"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:gravity="center"
-                    android:text="Mastercard"
-                    android:textColor="#1b1b1b"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:gravity="center"
-                    android:text="****9889"
-                    android:textColor="#999999"
-                    android:textSize="18sp" />
+                    android:src="@drawable/mastercard_2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:text="Mastercard"
+                        android:textColor="#1b1b1b"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="****9889"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/darkish_blue"
+                    android:src="@drawable/create_black_18_dp_2" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:src="@drawable/delete_outline_black_18_dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bright_blue"
+                    android:src="@drawable/x" />
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/darkish_blue"
-                android:src="@drawable/create_black_18_dp_2" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/blue"
-                android:src="@drawable/delete_outline_black_18_dp" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/bright_blue"
-                android:src="@drawable/x" />
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10pt"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/combined_shape" />
+            app:cardPreventCornerOverlap="true">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:background="@color/white"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:gravity="center"
-                    android:text="Visa black"
-                    android:textColor="#1b1b1b"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:gravity="center"
-                    android:text="****8764"
-                    android:textColor="#999999"
-                    android:textSize="18sp" />
+                    android:src="@drawable/combined_shape" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:text="Visa black"
+                        android:textColor="#1b1b1b"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="****8764"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnMore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/more_vert_black_18_dp" />
+
+
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@+id/btnMore1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/more_vert_black_18_dp" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/combined_shape" />
+            app:cardPreventCornerOverlap="true">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:background="@color/white"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:gravity="center"
-                    android:text="Visa black"
-                    android:textColor="#1b1b1b"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:gravity="center"
-                    android:text="****8764"
-                    android:textColor="#999999"
-                    android:textSize="18sp" />
+                    android:src="@drawable/combined_shape" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:text="Visa black"
+                        android:textColor="#1b1b1b"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="****8764"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnMore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/more_vert_black_18_dp" />
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@+id/btnMore2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/more_vert_black_18_dp" />
-        </LinearLayout>
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -329,5 +350,6 @@
         android:backgroundTint="@color/bright_blue"
         android:src="@drawable/add_black_18_dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/line7" />
+        app:layout_constraintRight_toRightOf="@id/line7"
+        app:layout_constraintTop_toBottomOf="@id/line5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
