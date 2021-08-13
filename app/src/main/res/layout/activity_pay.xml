@@ -109,6 +109,7 @@
                     </RelativeLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5pt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -146,13 +147,14 @@
                             android:layout_gravity="right|center"
                             android:layout_weight="1"
                             android:background="@drawable/border_money"
-                            android:fontFamily="@font/montserrat_semibold"
+                            android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:paddingHorizontal="8pt"
                             android:paddingVertical="3pt"
                             android:text="20,000€"
                             android:textColor="@color/white"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -218,188 +220,195 @@
             app:layout_constraintBottom_toBottomOf="@id/line4"
             app:layout_constraintTop_toTopOf="@id/line3"
             tools:layout_editor_absoluteX="12dp">
+
             <ScrollView
-                android:fillViewport="true"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="3pt">
-
-
+                android:fillViewport="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="3pt">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:gravity="center|left"
-                        android:text="Tipo de pago"
-                        android:textColor="#1b1b1b"
-                        android:textSize="18sp" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-                        android:layout_weight="2"
-                        android:orientation="horizontal">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:fontFamily="@font/montserrat_semibold"
-                            android:gravity="center"
-                            android:text="Personal"
-                            android:textColor="#666666"
-                            android:textSize="18sp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layerType="software"
-                    android:paddingHorizontal="10dp"
-                    android:src="@drawable/dotted" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        android:id="@+id/layoutCard"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/bbva" />
+                            android:layout_weight="3"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Tipo de pago"
+                            android:textColor="#1b1b1b"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="right"
                             android:layout_weight="2"
-                            android:orientation="vertical"
-                            android:paddingLeft="5pt">
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:fontFamily="@font/montserrat_medium"
-                                android:gravity="bottom"
-                                android:text="BBVA"
-                                android:textColor="#1b1b1b"
+                                android:gravity="center"
+                                android:text="Personal"
+                                android:textColor="#666666"
                                 android:textSize="18sp" />
 
-                            <TextView
+                            <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:fontFamily="@font/montserrat_semibold"
-                                android:gravity="top"
-                                android:text="****9889"
-                                android:textColor="#999999"
-                                android:textSize="16sp" />
-
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
                         </LinearLayout>
+                    </LinearLayout>
 
-                        <ImageView
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layerType="software"
+                        android:paddingHorizontal="10dp"
+                        android:src="@drawable/dotted" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/layoutCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/bbva" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_weight="2"
+                                android:orientation="vertical"
+                                android:paddingLeft="5pt">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:gravity="bottom"
+                                    android:text="BBVA"
+                                    android:textColor="#1b1b1b"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:gravity="top"
+                                    android:text="****9889"
+                                    android:textColor="#999999"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layerType="software"
+                        android:paddingHorizontal="10dp"
+                        android:src="@drawable/dotted" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                            android:layout_weight="2"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Tarifas por transacción"
+                            android:textColor="#1b1b1b"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|right"
+                            android:text="0,00€"
+                            android:textColor="#666666"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layerType="software"
+                        android:paddingHorizontal="10dp"
+                        android:src="@drawable/dotted" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Tú pagas"
+                            android:textColor="#1b1b1b"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|right"
+                            android:text="20,00€"
+                            android:textColor="@color/green_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layerType="software"
-                    android:paddingHorizontal="10dp"
-                    android:src="@drawable/dotted" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:gravity="center|left"
-                        android:text="Tarifas por transacción"
-                        android:textColor="#1b1b1b"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:gravity="center|right"
-                        android:text="0,00€"
-                        android:textColor="#666666"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layerType="software"
-                    android:paddingHorizontal="10dp"
-                    android:src="@drawable/dotted" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:gravity="center|left"
-                        android:text="Tú pagas"
-                        android:textColor="#1b1b1b"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:gravity="center|right"
-                        android:text="20,00€"
-                        android:textColor="@color/green_blue"
-                        android:textSize="24sp" />
-                </LinearLayout>
-            </LinearLayout>
             </ScrollView>
         </androidx.cardview.widget.CardView>
 

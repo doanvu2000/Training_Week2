@@ -82,11 +82,12 @@
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/montserrat_medium"
         android:gravity="center|left"
         android:text="Cuentas bancarias y tarjetas"
         android:textColor="@color/white"
         android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/tvDetail"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
@@ -96,10 +97,10 @@
         android:id="@+id/tvDetail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/montserrat_medium"
         android:gravity="center|left"
         android:text="Mantenemos tus datos financieros protegidos para que nadie vea la información confidencial."
-        android:textColor="#ffffff"
+        android:textColor="@color/white_three"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@id/line1"
         app:layout_constraintLeft_toLeftOf="@id/line6"
@@ -120,12 +121,13 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/montserrat_medium"
         android:gravity="center|left"
         android:paddingHorizontal="4pt"
         android:text="Mis tarjetas"
         android:textColor="#001d50"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/line4"
         app:layout_constraintLeft_toLeftOf="@id/line6"
         app:layout_constraintRight_toRightOf="@id/line7"
@@ -174,11 +176,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:fontFamily="@font/montserrat_semibold"
+                            android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:text="Mastercard"
                             android:textColor="#1b1b1b"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -243,11 +246,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:fontFamily="@font/montserrat_semibold"
+                            android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:text="Visa black"
                             android:textColor="#1b1b1b"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -309,11 +313,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:fontFamily="@font/montserrat_semibold"
+                            android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:text="Visa black"
                             android:textColor="#1b1b1b"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"

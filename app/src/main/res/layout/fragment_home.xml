@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/pale_grey"
-
-        android:paddingHorizontal="5pt"
+        android:paddingHorizontal="10pt"
         tools:context=".ui.home.HomeFragment">
 
 
@@ -221,6 +220,7 @@
                         android:background="@drawable/verdetail"
                         android:fontFamily="@font/montserrat_semibold"
                         android:paddingVertical="5dp"
+                        android:paddingHorizontal="10dp"
                         android:text="VER DETALLES"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -260,7 +260,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_semibold"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="bold"
             android:text="Enviar de nuevo"
             android:textColor="@color/darkish_blue"
             android:textSize="18sp"
@@ -283,18 +284,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:src="@drawable/bitmap_copy" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/montserrat_medium"
                     android:gravity="center"
                     android:text="Carlos Roca"
                     android:textColor="#666666"
@@ -309,18 +310,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:src="@drawable/bitmap_copy_3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/montserrat_medium"
                     android:gravity="center"
                     android:text="Ruby Sanz"
                     android:textColor="#666666"
@@ -334,18 +335,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:src="@drawable/bitmap_copy_4" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/montserrat_medium"
                     android:gravity="center"
                     android:text="Mary Rich"
                     android:textColor="#666666"
@@ -360,18 +361,18 @@
 
                 <ImageView
                     android:id="@+id/detail"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:src="@drawable/bitmap_copy_5" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/montserrat_medium"
                     android:gravity="center"
                     android:text="José Porto"
                     android:textColor="#666666"
@@ -392,7 +393,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/montserrat_semibold"
+                android:fontFamily="@font/montserrat_medium"
+                android:textStyle="bold"
                 android:gravity="center"
                 android:text="Actividad"
                 android:textColor="@color/darkish_blue"
